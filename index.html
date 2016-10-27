@@ -21,20 +21,61 @@
     <div id="lorem" class="texture background-sci-fi">
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate, sem in maximus gravida, ligula diam dignissim diam, sed aliquet nisl tellus quis risus. Suspendisse in turpis venenatis, molestie arcu non, feugiat ex. In non ipsum at sem molestie consectetur vel at massa. Nulla in mi accumsan risus auctor semper. Fusce et arcu eget metus ullamcorper viverra. Phasellus porta, nunc sed fermentum rutrum, lectus est commodo libero, ac consequat turpis purus nec odio. Nunc tempor elit nec nunc consectetur facilisis. Nullam venenatis arcu ut facilisis ultrices. Nullam rutrum mauris sit amet pellentesque ullamcorper. Nam ac magna aliquam, pulvinar elit eu, eleifend turpis.
     </div>
-
+    
     <div id="short-lorem" class="texture background-sci-fi-light">
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate, sem in maximus gravida, ligula diam dignissim diam, sed aliquet nisl tellus quis risus.
     </div>
-
+    
+    <div id="viveport" class="texture background-sci-fi-light">
+      <h3>Viveport</h3>
+      <p>Viveport is a content platform for virtual reality. Tech stack: Docker, Rreac.js, AWS, Jenkins, postCss</p>  
+      <img src="img/viveport.png" alt="">
+    </div>
+    
+    <div id="pic" class="texture background-sci-fi-light">
+      <img src="img/vic.jpg" alt="">
+    </div>
+    
     <div id="foxkeh" class="texture">
-      <img src="img/foxkeh.webp" alt="">
-      <p>「フォクすけ」は、Firefox のプロモーション活動をサポートしてくれる、日本発のマスコットキャラクターです。みんなと Firefox のことをもっともっと知りたいと思っています。どうぞよろしく！</p>
+      <!-- <img src="img/foxkeh.webp" alt=""> -->
+      <p class="intro">Hi, I'm Victor Wang, I'm a software engineer specialized in web engineering.
+      Particularly interested in building up MVP and entrepreneurship</p>
+    </div>
+    
+    <div id="pcclient" class="texture background-sci-fi-light">
+      <!-- <img src="img/foxkeh.webp" alt=""> -->
+      <h3>Viveport Client</h3>
+      <p>Viveport Client is a PC client designed as a showcase for HTV Vive VR content, I'm responsible for developing all webviews in the app</p>
     </div>
 
+    <div id="store" class="texture background-sci-fi-light">
+      <!-- <img src="img/foxkeh.webp" alt=""> -->
+      <h3>29Th of February</h3>
+      <p>A Famous Brand online store, supporting muti-language, muti-currency, payment flow, logistic management</p>
+    </div>
+    
+    <div id="sodar" class="texture background-sci-fi-light">
+      <!-- <img src="img/foxkeh.webp" alt=""> -->
+      <h3>Sodar App</h3>
+      <p>Sodar is an e-calendar with social features that dedicates to transform the way we share, browse, and join future events.</p>
+    </div>
+
+    <div id="viveland" class="texture background-sci-fi-light">
+      <!-- <img src="img/foxkeh.webp" alt=""> -->
+      <h3>ViveLand</h3>
+      <p>ViveLand is a total solution for arcade system, I'm responsible for bulding CMS system for Administrator</p>
+    </div>
+
+    <div id="test" class="texture background-sci-fi-light">
+      <!-- <img src="img/foxkeh.webp" alt=""> -->
+      <h3>test la</h3>
+      <p>tjierjkajflasjdfjsdkfjasdkfj.</p>
+    </div>
+  
     <div class="splash-screen"></div>
 
     <a-scene vr-mode-ui>
-      <a-entity id="camera" camera look-controls>
+      <a-entity id="camera" camera="active: true" look-controls>
         <a-cursor material="color: #4CC3D9; shader: flat">
       </a-entity>
 
@@ -43,7 +84,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate, sem in 
         <!-- 1st column -->
         <a-entity rotation="30 60 0">
           <a-entity id="plane-1-1" class="news-entity" geometry="primitive:plane;width:5;height:5;" position="0 0 -10"
-                    material="shader:html;target:#lorem;transparent:true;ratio:width;fps:1.5;" toggle-detail="target:#short-lorem;">
+                    material="shader:html;target:#store;transparent:true;ratio:width;fps:1.5;" toggle-detail="target:#store;">
             <a-animation attribute="position" to="0 0 -8" dur="200" begin="mouseenter"></a-animation>
             <a-animation attribute="position" to="0 0 -10" dur="200" begin="mouseleave"></a-animation>
             <a-animation attribute="geometry.width" from="5" to="10" dur="500" direction="alternate" begin="click"></a-animation>
@@ -53,7 +94,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate, sem in 
         <!-- 3rd column -->
         <a-entity rotation="30 0 0">
           <a-entity id="plane-1-3" class="news-entity" geometry="primitive:plane;width:5;height:5;" position="0 0 -10"
-                    material="shader:html;target:#short-lorem;transparent:true;ratio:width;fps:1.5;" toggle-detail="target:#short-lorem;">
+                    material="shader:html;target:#viveport;transparent:true;ratio:width;fps:1.5;" toggle-detail="target:#short-lorem;">
             <a-animation attribute="position" to="0 0 -8" dur="200" begin="mouseenter"></a-animation>
             <a-animation attribute="position" to="0 0 -10" dur="200" begin="mouseleave"></a-animation>
             <a-animation attribute="geometry.width" from="5" to="10" dur="500" direction="alternate" begin="click"></a-animation>
@@ -69,7 +110,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate, sem in 
         <!-- 2nd column -->
         <a-entity rotation="0 30 0">
           <a-entity id="plane-2-2" class="news-entity" geometry="primitive:plane;width:5;height:5;" position="0 0 -10"
-                    material="shader:html;target:#short-lorem;transparent:true;ratio:width;fps:1.5;" toggle-detail="target:#short-lorem;">
+                    material="shader:html;target:#pic;transparent:true;ratio:width;fps:1.5;" toggle-detail="target:#foxkeh;">
             <a-animation attribute="position" to="0 0 -8" dur="200" begin="mouseenter"></a-animation>
             <a-animation attribute="position" to="0 0 -10" dur="200" begin="mouseleave"></a-animation>
             <a-animation attribute="geometry.width" from="5" to="10" dur="500" direction="alternate" begin="click"></a-animation>
@@ -82,14 +123,14 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate, sem in 
                     material="shader:html;target:#foxkeh;transparent:true;ratio:width;fps:1.5;" toggle-detail="target:#foxkeh;">
             <a-animation attribute="position" to="0 0 -8" dur="200" begin="mouseenter"></a-animation>
             <a-animation attribute="position" to="0 0 -10" dur="200" begin="mouseleave"></a-animation>
-            <a-animation attribute="geometry.width" from="5" to="10" dur="500" direction="alternate" begin="click"></a-animation>
-            <a-animation attribute="geometry.height" from="5" to="10" dur="500" direction="alternate" begin="click"></a-animation>
+            <!-- <a-animation attribute="geometry.width" from="5" to="10" dur="500" direction="alternate" begin="click"></a-animation>
+            <a-animation attribute="geometry.height" from="5" to="10" dur="500" direction="alternate" begin="click"></a-animation> -->
           </a-entity>
         </a-entity>
         <!-- 5th column -->
         <a-entity rotation="0 -60 0">
           <a-entity id="plane-2-5" class="news-entity" geometry="primitive:plane;width:5;height:5;" position="0 0 -10"
-                    material="shader:html;target:#short-lorem;transparent:true;ratio:width;fps:1.5;" toggle-detail="target:#short-lorem;">
+                    material="shader:html;target:#viveland;transparent:true;ratio:width;fps:1.5;" toggle-detail="target:#viveland;">
             <a-animation attribute="position" to="0 0 -8" dur="200" begin="mouseenter"></a-animation>
             <a-animation attribute="position" to="0 0 -10" dur="200" begin="mouseleave"></a-animation>
             <a-animation attribute="geometry.width" from="5" to="10" dur="500" direction="alternate" begin="click"></a-animation>
@@ -105,7 +146,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate, sem in 
         <!-- 1st column -->
         <a-entity rotation="-30 60 0">
           <a-entity id="plane-3-1" class="news-entity" geometry="primitive:plane;width:5;height:5;" position="0 0 -10"
-                    material="shader:html;target:#lorem;transparent:true;ratio:width;fps:1.5;" toggle-detail="target:#short-lorem;">
+                    material="shader:html;target:#sodar;transparent:true;ratio:width;fps:1.5;" toggle-detail="target:#sodar;">
             <a-animation attribute="position" to="0 0 -8" dur="200" begin="mouseenter"></a-animation>
             <a-animation attribute="position" to="0 0 -10" dur="200" begin="mouseleave"></a-animation>
             <a-animation attribute="geometry.width" from="5" to="10" dur="500" direction="alternate" begin="click"></a-animation>
@@ -115,7 +156,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate, sem in 
         <!-- 4th column -->
         <a-entity rotation="-30 -30 0">
           <a-entity id="plane-3-4" class="news-entity" geometry="primitive:plane;width:5;height:5;" position="0 0 -10"
-                    material="shader:html;target:#lorem;transparent:true;ratio:width;fps:1.5;" toggle-detail="target:#lorem;">
+                    material="shader:html;target:#pcclient;transparent:true;ratio:width;fps:1.5;" toggle-detail="target:#pcclient;">
             <a-animation attribute="position" to="0 0 -8" dur="200" begin="mouseenter"></a-animation>
             <a-animation attribute="position" to="0 0 -10" dur="200" begin="mouseleave"></a-animation>
             <a-animation attribute="geometry.width" from="5" to="10" dur="500" direction="alternate" begin="click"></a-animation>
@@ -129,15 +170,15 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate, sem in 
       <!-- <a-entity id="news-detail" geometry="primitive:plane;width:4;height:5;" rotation="0 0 0" position="5 0 -5"></a-entity> -->
       <!-- <a-cylinder height="0" radius="30" position="0 0 0"></a-cylinder> -->
 
-      <a-entity>
+      <!-- <a-entity>
         <a-cylinder position="0 2 0" radius="11" height="5" side="back" open-ended="true" color="#FFF"></a-cylinder>
-      </a-entity>
+      </a-entity> -->
 
-      <a-entity>
+     <!--  <a-entity>
         <a-cylinder position="0 -5 0" radius="10" height="1.6" side="back" open-ended="true" color="#FFF"></a-cylinder>
-      </a-entity>
-
-      <a-sky segments-height="1" segments-width="1" color="#ECECEC"></a-sky>
+      </a-entity> -->
+      <a-sky src="img/space.jpg" rotation="0 -130 0"></a-sky>
+      <!-- <a-sky segments-height="1" segments-width="1" color="#ECECEC"></a-sky> -->
     </a-scene>
 
 

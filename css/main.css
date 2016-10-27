@@ -2,12 +2,15 @@ html {
   font-size: 10px;
   font-family: Open Sans;
 }
-
+h3 { 
+  color: #00c9fb;
+}
 .texture {
   position: absolute;
   top: 0;
   width: 512px;
   height: 512px;
+  /*height: auto*/
 }
 
 .texture.detail {
@@ -62,7 +65,7 @@ html {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-#lorem, #short-lorem {
+#lorem, #short-lorem, #viveport, #pcclient, #store, #sodar, #viveland {
   font-size: 50px;
   color: white;
   padding: 50px;
@@ -80,4 +83,8 @@ html {
 
 #foxkeh.detail {
   background-color: #fff;
+}
+
+.intro {
+  color: white;
 }
